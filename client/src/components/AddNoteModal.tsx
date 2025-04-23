@@ -87,7 +87,7 @@ export default function AddNoteModal({ isOpen, onClose }: AddNoteModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="sm:max-w-lg">
+      <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold">Add a Warm Fuzzy</DialogTitle>
         </DialogHeader>

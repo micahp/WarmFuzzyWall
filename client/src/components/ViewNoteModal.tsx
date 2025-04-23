@@ -17,7 +17,7 @@ export default function ViewNoteModal({ note, isOpen, onClose }: ViewNoteModalPr
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="sm:max-w-lg">
+      <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>Warm Fuzzy Note</DialogTitle>
         </DialogHeader>
