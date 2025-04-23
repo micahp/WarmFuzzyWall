@@ -5,6 +5,8 @@ import { insertNoteSchema } from "@shared/schema";
 import { fromZodError } from "zod-validation-error";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Clear all test data on server startup
+  await storage.clearAllNotes();
   // Get notes with pagination
   app.get("/api/notes", async (req: Request, res) => {
     try {
