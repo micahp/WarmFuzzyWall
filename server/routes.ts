@@ -11,8 +11,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.sendFile(path.join(process.cwd(), 'public/og-image.png'));
   });
   
-  // Clear all test data on server startup
-  await storage.clearAllNotes();
+  // We no longer clear notes on startup to preserve data between deployments
+  // await storage.clearAllNotes();
   // Get notes with pagination
   app.get("/api/notes", async (req: Request, res) => {
     try {

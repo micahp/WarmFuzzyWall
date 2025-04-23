@@ -67,6 +67,9 @@ export class DatabaseStorage implements IStorage {
   }
 
   async clearAllNotes(): Promise<void> {
+    // We only clear data when explicitly requested
+    // This is dangerous, so we'll leave a warning comment
+    console.warn("WARNING: Clearing all notes from the database. This will delete all user data.");
     await db.delete(notes);
     this.testMode = false;
   }
