@@ -1,0 +1,56 @@
+import type { Express } from "express";
+import { createServer, type Server } from "http";
+import { storage } from "./storage";
+import { insertNoteSchema } from "@shared/schema";
+import { fromZodError } from "zod-validation-error";
+
+export async function registerRoutes(app: Express): Promise<Server> {
+  // Get all notes
+  app.get("/api/notes", async (_req, res) => {
+    try {
+      const notes = await storage.getNotes();
+      res.json(notes);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to fetch notes" });
+    }
+  });
+
+  // Get note by id
+  app.get("/api/notes/:id", async (req, res) => {
+    try {
+      const id = parseInt(req.params.id);
+      if (isNaN(id)) {
+        return res.status(400).json({ message: "Invalid note ID" });
+      }
+      
+      const note = await storage.getNoteById(id);
+      if (!note) {
+        return res.status(404).json({ message: "Note not found" });
+      }
+      
+      res.json(note);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to fetch note" });
+    }
+  });
+
+  // Create a new note
+  app.post("/api/notes", async (req, res) => {
+    try {
+      const parseResult = insertNoteSchema.safeParse(req.body);
+      
+      if (!parseResult.success) {
+        const errorMessage = fromZodError(parseResult.error).message;
+        return res.status(400).json({ message: errorMessage });
+      }
+
+      const newNote = await storage.createNote(parseResult.data);
+      res.status(201).json(newNote);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to create note" });
+    }
+  });
+
+  const httpServer = createServer(app);
+  return httpServer;
+}
