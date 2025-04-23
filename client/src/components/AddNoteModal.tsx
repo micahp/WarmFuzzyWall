@@ -123,7 +123,7 @@ export default function AddNoteModal({ isOpen, onClose }: AddNoteModalProps) {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="note-recipient">For whom? (optional):</Label>
+            <Label htmlFor="note-recipient">To (optional):</Label>
             <Input
               id="note-recipient"
               value={recipient}
@@ -133,7 +133,7 @@ export default function AddNoteModal({ isOpen, onClose }: AddNoteModalProps) {
           </div>
 
           <div className="space-y-2">
-            <Label htmlFor="note-author">Your name (optional):</Label>
+            <Label htmlFor="note-author">From (optional):</Label>
             <Input
               id="note-author"
               value={author}

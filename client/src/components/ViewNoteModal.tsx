@@ -1,9 +1,8 @@
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Note } from "@shared/schema";
 import { formatDetailDate } from "@/lib/utils";
 import { getColorClass } from "@/lib/colors";
-import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 interface ViewNoteModalProps {
   note: Note | null;
@@ -21,12 +20,6 @@ export default function ViewNoteModal({ note, isOpen, onClose }: ViewNoteModalPr
       <DialogContent className="sm:max-w-lg">
         <DialogHeader>
           <DialogTitle>Warm Fuzzy Note</DialogTitle>
-          <DialogDescription>
-            {note.recipient 
-              ? `Read this warm and fuzzy note from ${note.author} to ${note.recipient}.`
-              : `Read this warm and fuzzy note from ${note.author}.`
-            }
-          </DialogDescription>
         </DialogHeader>
         
         <div className={`sticky-note ${colorClass} relative p-6`} style={{ transform: 'none', minHeight: '200px' }}>
