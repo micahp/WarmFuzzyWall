@@ -99,6 +99,55 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.status(500).json({ message: "Failed to get test mode status" });
     }
   });
+  
+  // Export all notes (for database backup/transfer)
+  app.get("/api/notes/export", async (_req, res) => {
+    try {
+      const allNotes = await storage.getNotes();
+      res.json({ notes: allNotes });
+    } catch (error) {
+      console.error("Error exporting notes:", error);
+      res.status(500).json({ message: "Failed to export notes" });
+    }
+  });
+  
+  // Import notes (for database restore/transfer)
+  app.post("/api/notes/import", async (req, res) => {
+    try {
+      const { notes: notesToImport, clearExisting } = req.body;
+      
+      if (!Array.isArray(notesToImport)) {
+        return res.status(400).json({ message: "Notes must be an array" });
+      }
+      
+      // Optionally clear existing notes first
+      if (clearExisting) {
+        await storage.clearAllNotes();
+      }
+      
+      // Import all notes
+      for (const note of notesToImport) {
+        // Strip the ID to avoid conflicts
+        const { id, createdAt, ...noteData } = note;
+        
+        // Keep the original creation date if provided
+        const insertData = {
+          ...noteData,
+          ...(createdAt && { createdAt: new Date(createdAt) })
+        };
+        
+        await storage.createNote(insertData);
+      }
+      
+      res.json({ 
+        success: true, 
+        message: `Imported ${notesToImport.length} notes successfully` 
+      });
+    } catch (error) {
+      console.error("Error importing notes:", error);
+      res.status(500).json({ message: "Failed to import notes" });
+    }
+  });
 
   const httpServer = createServer(app);
   return httpServer;

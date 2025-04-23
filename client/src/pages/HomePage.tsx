@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import StickyNoteWall from "@/components/StickyNoteWall";
 import AddNoteButton from "@/components/AddNoteButton";
 import AddNoteModal from "@/components/AddNoteModal";
 import ViewNoteModal from "@/components/ViewNoteModal";
 import { Note } from "@shared/schema";
 import { motion } from "framer-motion";
+import { Database } from "lucide-react";
 
 export default function HomePage() {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
