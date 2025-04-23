@@ -33,6 +33,16 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white px-4 py-8">
+      {/* Admin Tools */}
+      <div className="absolute top-4 right-4">
+        <Link href="/data-transfer">
+          <div className="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-900 cursor-pointer">
+            <Database size={16} />
+            <span className="hidden sm:inline">Data Transfer</span>
+          </div>
+        </Link>
+      </div>
+      
       {/* Header Section */}
       <header className="text-center mb-8">
         <motion.h1 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800 whitespace-nowrap" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>Warm and Fuzzies Wall</motion.h1>
