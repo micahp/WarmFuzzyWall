@@ -1,16 +1,27 @@
-import type { Express } from "express";
+import type { Express, Request } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertNoteSchema } from "@shared/schema";
 import { fromZodError } from "zod-validation-error";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // Get all notes
-  app.get("/api/notes", async (_req, res) => {
+  // Get notes with pagination
+  app.get("/api/notes", async (req: Request, res) => {
     try {
-      const notes = await storage.getNotes();
-      res.json(notes);
+      const page = parseInt(req.query.page as string) || 1;
+      const limit = parseInt(req.query.limit as string) || 12;
+      
+      const { notes, totalCount } = await storage.getNotesPaginated(page, limit);
+      
+      res.json({
+        notes,
+        page,
+        limit,
+        totalCount,
+        hasMore: page * limit < totalCount
+      });
     } catch (error) {
+      console.error("Error fetching notes:", error);
       res.status(500).json({ message: "Failed to fetch notes" });
     }
   });

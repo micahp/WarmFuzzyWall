@@ -1,9 +1,11 @@
 import { notes, type Note, type InsertNote } from "@shared/schema";
 import { db } from "./db";
-import { eq, desc } from "drizzle-orm";
+import { eq, desc, count } from "drizzle-orm";
+import { sql } from "drizzle-orm/sql";
 
 export interface IStorage {
   getNotes(): Promise<Note[]>;
+  getNotesPaginated(page: number, limit: number): Promise<{ notes: Note[], totalCount: number }>;
   getNoteById(id: number): Promise<Note | undefined>;
   createNote(note: InsertNote): Promise<Note>;
   loadTestData(): Promise<void>;
@@ -21,6 +23,27 @@ export class DatabaseStorage implements IStorage {
   async getNotes(): Promise<Note[]> {
     // Get all notes sorted by creation date, newest first
     return await db.select().from(notes).orderBy(desc(notes.createdAt));
+  }
+
+  async getNotesPaginated(page: number, limit: number): Promise<{ notes: Note[], totalCount: number }> {
+    const offset = (page - 1) * limit;
+    
+    // Get paginated notes sorted by creation date, newest first
+    const notesResult = await db.select()
+      .from(notes)
+      .orderBy(desc(notes.createdAt))
+      .limit(limit)
+      .offset(offset);
+    
+    // Get total count for pagination
+    const [{ value: totalCount }] = await db
+      .select({ value: count() })
+      .from(notes);
+    
+    return {
+      notes: notesResult,
+      totalCount: Number(totalCount)
+    };
   }
 
   async getNoteById(id: number): Promise<Note | undefined> {
@@ -124,6 +147,31 @@ export class DatabaseStorage implements IStorage {
         author: "Casey",
         color: "sticky-purple",
         daysAgo: 9
+      },
+      // Add more test data to demonstrate pagination
+      {
+        message: "I love how you always bring cookies to our team meetings. You make Mondays so much better!",
+        author: "Riley",
+        color: "sticky-pink",
+        daysAgo: 2
+      },
+      {
+        message: "Thank you for covering for me last week. You're a lifesaver and I really appreciate it!",
+        author: "Sam",
+        color: "sticky-yellow",
+        daysAgo: 3
+      },
+      {
+        message: "The way you handled that difficult client with patience and professionalism was truly impressive.",
+        author: "Morgan",
+        color: "sticky-blue",
+        daysAgo: 4
+      },
+      {
+        message: "Your positivity during our crunch time kept the whole team motivated. Thank you!",
+        author: "Anonymous",
+        color: "sticky-green",
+        daysAgo: 5
       }
     ];
 
