@@ -22,12 +22,20 @@ export default function ViewNoteModal({ note, isOpen, onClose }: ViewNoteModalPr
         <DialogHeader>
           <DialogTitle>Warm Fuzzy Note</DialogTitle>
           <DialogDescription>
-            Read this warm and fuzzy note from {note.author}.
+            {note.recipient 
+              ? `Read this warm and fuzzy note from ${note.author} to ${note.recipient}.`
+              : `Read this warm and fuzzy note from ${note.author}.`
+            }
           </DialogDescription>
         </DialogHeader>
         
         <div className={`sticky-note ${colorClass} relative p-6`} style={{ transform: 'none', minHeight: '200px' }}>
-          <div className="note-content text-xl leading-relaxed text-gray-800">
+          {note.recipient && (
+            <div className="absolute top-2 right-3 text-sm font-medium text-gray-600">
+              To: {note.recipient}
+            </div>
+          )}
+          <div className={`note-content text-xl leading-relaxed text-gray-800 ${note.recipient ? 'mt-5' : ''}`}>
             <p>{note.message}</p>
           </div>
           <div className="mt-6 text-sm text-gray-700 flex justify-between items-end">

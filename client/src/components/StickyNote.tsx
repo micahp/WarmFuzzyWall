@@ -29,7 +29,12 @@ export default function StickyNote({ note, onNoteClick, animation = false }: Sti
       animate={animation ? { opacity: 1, y: 0 } : undefined}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
-      <div className="note-content text-lg leading-relaxed text-gray-800">
+      {note.recipient && (
+        <div className="absolute top-2 right-3 text-sm text-gray-600">
+          To: {note.recipient}
+        </div>
+      )}
+      <div className={`note-content text-lg leading-relaxed text-gray-800 ${note.recipient ? 'mt-4' : ''}`}>
         <p>{note.message}</p>
       </div>
       <div className="mt-4 text-sm text-gray-700 flex justify-between items-end">
