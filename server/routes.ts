@@ -3,8 +3,14 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertNoteSchema } from "@shared/schema";
 import { fromZodError } from "zod-validation-error";
+import path from "path";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Serve the Open Graph image directly
+  app.get('/og-image.png', (req, res) => {
+    res.sendFile(path.join(process.cwd(), 'public/og-image.png'));
+  });
+  
   // Clear all test data on server startup
   await storage.clearAllNotes();
   // Get notes with pagination
