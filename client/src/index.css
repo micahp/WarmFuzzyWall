@@ -74,7 +74,7 @@
 }
 
 .sticky-note {
-  @apply rounded-md shadow-md p-4 cursor-pointer transition-transform duration-200 origin-center font-handwritten;
+  @apply rounded-md shadow-md p-4 cursor-pointer transition-transform duration-200 origin-center font-handwritten font-normal;
   min-height: 150px;
 }
 

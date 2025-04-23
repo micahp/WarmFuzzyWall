@@ -28,7 +28,7 @@ export default function ViewNoteModal({ note, isOpen, onClose }: ViewNoteModalPr
               To: {note.recipient}
             </div>
           )}
-          <div className={`note-content text-xl leading-relaxed text-gray-800 ${note.recipient ? 'mt-5' : ''}`}>
+          <div className={`note-content text-xl leading-relaxed text-gray-800 font-normal ${note.recipient ? 'mt-5' : ''}`}>
             <p>{note.message}</p>
           </div>
           <div className="mt-6 text-sm text-gray-700 flex justify-between items-end">

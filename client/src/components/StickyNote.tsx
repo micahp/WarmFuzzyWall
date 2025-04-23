@@ -34,7 +34,7 @@ export default function StickyNote({ note, onNoteClick, animation = false }: Sti
           To: {note.recipient}
         </div>
       )}
-      <div className={`note-content text-lg leading-relaxed text-gray-800 ${note.recipient ? 'mt-4' : ''}`}>
+      <div className={`note-content text-lg leading-relaxed text-gray-800 font-normal ${note.recipient ? 'mt-4' : ''}`}>
         <p>{note.message}</p>
       </div>
       <div className="mt-4 text-sm text-gray-700 flex justify-between items-end">
