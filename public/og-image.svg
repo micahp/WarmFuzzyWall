@@ -1,0 +1,60 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#f8f9fa"/>
+  
+  <!-- Decorative sticky notes -->
+  <!-- Yellow note -->
+  <g transform="translate(200, 150) rotate(-5)">
+    <rect width="240" height="240" rx="4" fill="#fff9c4" filter="drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2))"/>
+    <path d="M240 0 L240 40 L200 0 Z" fill="#ffeb3b"/>
+    <text x="20" y="70" font-family="'Architects Daughter', cursive" font-size="24" fill="#333">
+      Your presentation today
+    </text>
+    <text x="20" y="100" font-family="'Architects Daughter', cursive" font-size="24" fill="#333">
+      was amazing!
+    </text>
+    <text x="20" y="200" font-family="'Architects Daughter', cursive" font-size="18" fill="#555" font-style="italic">
+      - Lisa
+    </text>
+  </g>
+  
+  <!-- Pink note -->
+  <g transform="translate(480, 200) rotate(3)">
+    <rect width="240" height="240" rx="4" fill="#f8bbd0" filter="drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2))"/>
+    <path d="M240 0 L240 40 L200 0 Z" fill="#f06292"/>
+    <text x="20" y="70" font-family="'Architects Daughter', cursive" font-size="24" fill="#333">
+      Thank you for always
+    </text>
+    <text x="20" y="100" font-family="'Architects Daughter', cursive" font-size="24" fill="#333">
+      being supportive!
+    </text>
+    <text x="20" y="200" font-family="'Architects Daughter', cursive" font-size="18" fill="#555" font-style="italic">
+      - Anonymous
+    </text>
+  </g>
+  
+  <!-- Blue note -->
+  <g transform="translate(760, 170) rotate(-2)">
+    <rect width="240" height="240" rx="4" fill="#bbdefb" filter="drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2))"/>
+    <path d="M240 0 L240 40 L200 0 Z" fill="#64b5f6"/>
+    <text x="20" y="70" font-family="'Architects Daughter', cursive" font-size="24" fill="#333">
+      You always bring such
+    </text>
+    <text x="20" y="100" font-family="'Architects Daughter', cursive" font-size="24" fill="#333">
+      positive energy!
+    </text>
+    <text x="20" y="200" font-family="'Architects Daughter', cursive" font-size="18" fill="#555" font-style="italic">
+      - Sarah
+    </text>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="500" font-family="'Poppins', sans-serif" font-size="64" font-weight="bold" fill="#333" text-anchor="middle">
+    Warm and Fuzzies
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="550" font-family="'Poppins', sans-serif" font-size="28" fill="#666" text-anchor="middle">
+    Share positivity and brighten someone's day
+  </text>
+</svg>
