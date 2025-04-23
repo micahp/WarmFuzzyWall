@@ -51,6 +51,36 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Enable test mode with sample data
+  app.post("/api/test-mode/enable", async (_req, res) => {
+    try {
+      await storage.loadTestData();
+      res.json({ success: true, testMode: true });
+    } catch (error) {
+      res.status(500).json({ message: "Failed to enable test mode" });
+    }
+  });
+
+  // Disable test mode and clear sample data
+  app.post("/api/test-mode/disable", async (_req, res) => {
+    try {
+      await storage.clearAllNotes();
+      res.json({ success: true, testMode: false });
+    } catch (error) {
+      res.status(500).json({ message: "Failed to disable test mode" });
+    }
+  });
+
+  // Check test mode status
+  app.get("/api/test-mode/status", (_req, res) => {
+    try {
+      const isTestMode = storage.isTestMode();
+      res.json({ testMode: isTestMode });
+    } catch (error) {
+      res.status(500).json({ message: "Failed to get test mode status" });
+    }
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }

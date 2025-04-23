@@ -3,6 +3,7 @@ import StickyNoteWall from "@/components/StickyNoteWall";
 import AddNoteButton from "@/components/AddNoteButton";
 import AddNoteModal from "@/components/AddNoteModal";
 import ViewNoteModal from "@/components/ViewNoteModal";
+import TestModeToggle from "@/components/TestModeToggle";
 import { Note } from "@shared/schema";
 import { motion } from "framer-motion";
 
@@ -31,6 +32,9 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white px-4 py-8">
+      {/* Test Mode Toggle */}
+      <TestModeToggle />
+      
       {/* Header Section */}
       <header className="text-center mb-8">
         <motion.h1 
