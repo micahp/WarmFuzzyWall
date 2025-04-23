@@ -20,6 +20,7 @@ interface AddNoteModalProps {
 export default function AddNoteModal({ isOpen, onClose }: AddNoteModalProps) {
   const [message, setMessage] = useState("");
   const [author, setAuthor] = useState("");
+  const [recipient, setRecipient] = useState("");
   const [selectedColor, setSelectedColor] = useState(STICKY_COLORS[0].value);
   const { toast } = useToast();
 
@@ -56,6 +57,7 @@ export default function AddNoteModal({ isOpen, onClose }: AddNoteModalProps) {
   const resetForm = () => {
     setMessage("");
     setAuthor("");
+    setRecipient("");
     setSelectedColor(STICKY_COLORS[0].value);
   };
 
@@ -74,6 +76,7 @@ export default function AddNoteModal({ isOpen, onClose }: AddNoteModalProps) {
     const newNote: InsertNote = {
       message: message.trim(),
       author: author.trim() || "Anonymous",
+      recipient: recipient.trim() || undefined,
       color: selectedColor,
     };
 
@@ -120,6 +123,16 @@ export default function AddNoteModal({ isOpen, onClose }: AddNoteModalProps) {
           </div>
 
           <div className="space-y-2">
+            <Label htmlFor="note-recipient">For whom? (optional):</Label>
+            <Input
+              id="note-recipient"
+              value={recipient}
+              onChange={(e) => setRecipient(e.target.value)}
+              placeholder="Enter the name of the recipient"
+            />
+          </div>
+
+          <div className="space-y-2">
             <Label htmlFor="note-author">Your name (optional):</Label>
             <Input
               id="note-author"
@@ -132,7 +145,12 @@ export default function AddNoteModal({ isOpen, onClose }: AddNoteModalProps) {
           <div className="space-y-2">
             <h3 className="text-lg font-medium">Preview:</h3>
             <div className={`sticky-note ${colorClass} relative`} style={{ transform: 'rotate(-2deg)' }}>
-              <div className="note-content text-lg leading-relaxed text-gray-800">
+              {recipient && (
+                <div className="absolute top-2 right-3 text-sm text-gray-600">
+                  To: {recipient}
+                </div>
+              )}
+              <div className="note-content text-lg leading-relaxed text-gray-800 mt-4">
                 <p>{message || "Your warm and fuzzy message will appear here..."}</p>
               </div>
               <div className="mt-4 text-sm text-gray-700 flex justify-between items-end">

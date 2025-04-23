@@ -6,6 +6,7 @@ export const notes = pgTable("notes", {
   id: serial("id").primaryKey(),
   message: text("message").notNull(),
   author: text("author").notNull().default("Anonymous"),
+  recipient: text("recipient"),
   color: text("color").notNull(),
   createdAt: timestamp("created_at").notNull().defaultNow(),
 });

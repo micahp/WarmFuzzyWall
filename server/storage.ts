@@ -79,72 +79,84 @@ export class DatabaseStorage implements IStorage {
       {
         message: "Your presentation today was amazing! You explained complex concepts so clearly that even I could understand them. Keep up the great work!",
         author: "Lisa",
+        recipient: "Alex Johnson",
         color: "sticky-yellow",
         daysAgo: 0
       },
       {
         message: "Thanks for helping me debug that issue yesterday. You're always so patient and willing to share your knowledge.",
         author: "Michael",
+        recipient: "Taylor Smith",
         color: "sticky-blue",
         daysAgo: 0
       },
       {
         message: "You always bring such positive energy to our team meetings. It makes a huge difference to the whole group dynamic!",
         author: "Sarah",
+        recipient: "Jamie Rodriguez",
         color: "sticky-pink",
         daysAgo: 1
       },
       {
         message: "I admire how you always volunteer to take on new challenges. Your courage inspires me to step out of my comfort zone too.",
         author: "Anonymous",
+        recipient: "Sam Wilson",
         color: "sticky-green",
         daysAgo: 1
       },
       {
         message: "The design work you did on our project was absolutely stunning. You have a real eye for detail!",
         author: "Carlos",
+        recipient: "Riley Chen",
         color: "sticky-purple",
         daysAgo: 2
       },
       {
         message: "I wanted to let you know that your hard work doesn't go unnoticed. You're a vital part of our team's success.",
         author: "Jamie",
+        recipient: "Jordan Lee",
         color: "sticky-orange",
         daysAgo: 3
       },
       {
         message: "Your problem-solving skills are amazing. You found a solution that none of us could see!",
         author: "Taylor",
+        recipient: "Morgan Kim",
         color: "sticky-teal",
         daysAgo: 4
       },
       {
         message: "I really appreciate how you always take time to explain things to newcomers. You're making our onboarding so much better!",
         author: "Anonymous",
+        recipient: "Robin Patel",
         color: "sticky-yellow",
         daysAgo: 5
       },
       {
         message: "The way you handled that tough situation with our client was so professional. I learned a lot from watching you navigate that conversation.",
         author: "Alex",
+        recipient: "Casey Williams",
         color: "sticky-pink",
         daysAgo: 6
       },
       {
         message: "Your attention to detail saved us from a major issue in production. Thank you for being so thorough!",
         author: "Robin",
+        recipient: "Michael Brown",
         color: "sticky-blue",
         daysAgo: 7
       },
       {
         message: "I just wanted to say that you're doing an incredible job, and I'm grateful to have you on our team.",
         author: "Jordan",
+        recipient: "Sarah Davis",
         color: "sticky-green",
         daysAgo: 8
       },
       {
         message: "The ideas you shared in the brainstorming session were so creative and innovative. You really got us all thinking outside the box!",
         author: "Casey",
+        recipient: "Carlos Martinez",
         color: "sticky-purple",
         daysAgo: 9
       },
@@ -152,24 +164,28 @@ export class DatabaseStorage implements IStorage {
       {
         message: "I love how you always bring cookies to our team meetings. You make Mondays so much better!",
         author: "Riley",
+        recipient: "Lisa Thompson",
         color: "sticky-pink",
         daysAgo: 2
       },
       {
         message: "Thank you for covering for me last week. You're a lifesaver and I really appreciate it!",
         author: "Sam",
+        recipient: "Alex Johnson",
         color: "sticky-yellow",
         daysAgo: 3
       },
       {
         message: "The way you handled that difficult client with patience and professionalism was truly impressive.",
         author: "Morgan",
+        recipient: "Taylor Smith",
         color: "sticky-blue",
         daysAgo: 4
       },
       {
         message: "Your positivity during our crunch time kept the whole team motivated. Thank you!",
         author: "Anonymous",
+        recipient: "Jamie Rodriguez",
         color: "sticky-green",
         daysAgo: 5
       }
@@ -187,6 +203,7 @@ export class DatabaseStorage implements IStorage {
       await db.insert(notes).values({
         message: testData.message,
         author: testData.author,
+        recipient: testData.recipient,
         color: testData.color,
         createdAt: date
       });
