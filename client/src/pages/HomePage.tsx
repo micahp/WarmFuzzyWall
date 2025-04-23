@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { Link } from "wouter";
 import StickyNoteWall from "@/components/StickyNoteWall";
 import AddNoteButton from "@/components/AddNoteButton";
 import AddNoteModal from "@/components/AddNoteModal";
 import ViewNoteModal from "@/components/ViewNoteModal";
 import { Note } from "@shared/schema";
 import { motion } from "framer-motion";
-import { Database } from "lucide-react";
 
 export default function HomePage() {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
@@ -33,19 +31,10 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white px-4 py-8">
-      {/* Admin Tools */}
-      <div className="absolute top-4 right-4">
-        <Link href="/data-transfer">
-          <div className="flex items-center gap-1 text-sm text-gray-600 hover:text-gray-900 cursor-pointer">
-            <Database size={16} />
-            <span className="hidden sm:inline">Data Transfer</span>
-          </div>
-        </Link>
-      </div>
       
       {/* Header Section */}
       <header className="text-center mb-8">
-        <motion.h1 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>Warm and Fuzzies Wall</motion.h1>
+        <motion.h1 className="text-4xl md:text-5xl font-bold mb-2 text-gray-800" initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>Warm and Fuzzies</motion.h1>
         <motion.p className="text-base text-gray-600 max-w-2xl mx-auto" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.2 }}>
           We had a warm fuzzy wall at our annual Posse Plus Retreat at UT to share positive messages and compliments with our peers. I thought it would be nice to create a digital version.
         </motion.p>
