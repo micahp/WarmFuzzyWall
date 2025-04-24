@@ -44,6 +44,7 @@ export default function StickyNoteWall({ onNoteClick }: StickyNoteWallProps) {
     getNextPageParam: (lastPage) => {
       return lastPage.hasMore ? lastPage.page + 1 : undefined;
     },
+    refetchOnWindowFocus: false, // Prevent automatic refetching which could reset the list
   });
 
   // Set up intersection observer for infinite scrolling
@@ -116,7 +117,7 @@ export default function StickyNoteWall({ onNoteClick }: StickyNoteWallProps) {
     );
   }
 
-  // Get all notes from all pages
+  // Get all notes from all pages (ensure we combine them properly)
   const allNotes = data?.pages?.flatMap(page => page.notes) || [];
 
   // Display empty state if no notes exist
@@ -134,12 +135,12 @@ export default function StickyNoteWall({ onNoteClick }: StickyNoteWallProps) {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-20">
-        {allNotes.map((note, index) => (
+        {allNotes.map((note) => (
           <StickyNote 
-            key={`${note.id}-${index}`} 
+            key={note.id} 
             note={note} 
             onNoteClick={onNoteClick} 
-            animation={index >= allNotes.length - 8 && isFetchingNextPage}
+            animation={false} // Animation only for newly loaded notes
           />
         ))}
         
