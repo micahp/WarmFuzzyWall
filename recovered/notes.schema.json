@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Recovered Warm Fuzzies notes",
+  "type": "object",
+  "required": ["meta", "notes"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["title", "recovered_on", "notes_recovered"],
+      "properties": {
+        "title": { "type": "string" },
+        "subject": { "type": "string" },
+        "recovered_on": { "type": "string", "format": "date" },
+        "recovered_by": { "type": "string" },
+        "original_app": { "type": "string" },
+        "live_url": { "type": "string" },
+        "status": { "type": "string" },
+        "sources": { "type": "array", "items": { "type": "object" } },
+        "notes_recovered": { "type": "integer", "minimum": 0 },
+        "confidence_legend": { "type": "object" }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "text", "confidence"],
+        "properties": {
+          "id": { "type": "integer" },
+          "recipient": { "type": ["string", "null"], "description": "value of the 'To:' line" },
+          "author": { "type": ["string", "null"], "description": "signature at bottom-right of note" },
+          "date": { "type": ["string", "null"], "description": "date in top-right of note, as displayed" },
+          "text": { "type": "string", "description": "note body, verbatim" },
+          "confidence": { "enum": ["high", "medium", "low"] },
+          "source": { "type": "string" },
+          "recovery_note": { "type": "string" },
+          "note": { "type": "string" },
+          "author_uncertain": { "type": "string" },
+          "note_text_original_typos_preserved": { "type": "boolean" }
+        }
+      }
+    },
+    "still_missing": { "type": "object" },
+    "next_steps": { "type": "array", "items": { "type": "string" } }
+  }
+}

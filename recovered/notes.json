@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "title": "Warm and Fuzzies Wall — Recovered Notes",
+    "subject": "Micah's 30th birthday wall",
+    "recovered_on": "2026-10-18",
+    "recovered_by": "Kallen (Hermes) for Micah Peoples (@geoppls)",
+    "original_app": "https://replit.com/@geoppls/WarmFuzzyWall",
+    "live_url": "https://warm-fuzzy-wall--geoppls.replit.app (UI still serves, database is gone)",
+    "status": "PARTIAL RECOVERY — original Neon Postgres database deleted by Replit; retention window (~1 week) long expired",
+    "sources": [
+      {
+        "name": "YouTube demo video",
+        "url": "https://youtu.be/_PtelREnQqY",
+        "title": "Demoing a Replit app: Warm Fuzzy Birthday Wall",
+        "detail": "163.8s screen recording, downloaded at 1280x720, sampled at 2fps -> 328 frames, 42 distinct views. Primary source."
+      },
+      {
+        "name": "YouTube maxres thumbnail",
+        "url": "https://i.ytimg.com/vi/_PtelREnQqY/maxresdefault.jpg",
+        "detail": "1280x720 frame of the wall, used for cross-checking."
+      },
+      {
+        "name": "Replit agent commit screenshots",
+        "url": "https://storage.googleapis.com/screenshot-production-us-central1/87268ac1-aa2a-450f-ae87-3f3de7e711a0/",
+        "detail": "22 commit-attached screenshots still live on GCS. One captured the wall with a real note."
+      }
+    ],
+    "notes_recovered": 18,
+    "confidence_legend": {
+      "high": "Full text legible across multiple frames, cross-checked",
+      "medium": "Legible but partially occluded; concatenated from several frames",
+      "low": "Fragmentary — only part of the note ever appeared on camera"
+    }
+  },
+  "notes": [
+    {
+      "id": 1,
+      "recipient": "Geo",
+      "author": "Hope",
+      "date": "May 2",
+      "text": "Happy Birthday Geo 🥳 You amazing, creative, technologically brilliant, phenomenal soul, you! Keep creating the music ever inspiring Humanity to sing. Wishing you 30 more extraordinary years ahead - and a thousand more greater still. - Hope 🎈 Well",
+      "confidence": "high",
+      "source": "multiple frames"
+    },
+    {
+      "id": 2,
+      "recipient": null,
+      "author": "Crystal Gravy",
+      "date": "Apr 25",
+      "text": "Yoooo Mr geo you're the man! Great to know ya. Happy birthday!",
+      "confidence": "high",
+      "source": "multiple frames"
+    },
+    {
+      "id": 3,
+      "recipient": null,
+      "author": "Anonymous",
+      "date": "Apr 24",
+      "text": "Happy birthday to the most creative and inspiring person I have ever met. A person with more drive and intelligence than most. Thank God for the parking meter we met at. May the next 30 years be even better than your last!",
+      "confidence": "high",
+      "source": "multiple frames"
+    },
+    {
+      "id": 4,
+      "recipient": null,
+      "author": "TB",
+      "date": "Apr 24",
+      "text": "You've always been so driven, curious, & experimental. Happy Birthday! Hope this new decade is grounded in community, awe, & safe places to land 🕊️",
+      "confidence": "high",
+      "source": "multiple frames"
+    },
+    {
+      "id": 5,
+      "recipient": null,
+      "author": "Anonymous",
+      "date": "Apr 23",
+      "text": "I told chatgpt to catch me outside on righting an essay for Micah's 30th birthday. But I really didn't have a good joke to follow that up with. Umm Yeah. What else do I say? This dude right here (metaphorically points at Micah), all grown and stuff in his 30s now. I love him. And don't you forget it!",
+      "confidence": "medium",
+      "source": "video frames + thumbnail (top of note cut off in early frames)",
+      "note_text_original_typos_preserved": true
+    },
+    {
+      "id": 6,
+      "recipient": null,
+      "author": "JD",
+      "date": "Apr 23",
+      "text": "Eyyyy! Happy fu*cckkkiiinnng birthday!! It's been a pleasure to have met you and hoping the best for you man! Good luck on your journey and make those moments count!",
+      "confidence": "high",
+      "source": "multiple frames"
+    },
+    {
+      "id": 7,
+      "recipient": null,
+      "author": "Allie",
+      "date": "Apr 23",
+      "text": "MICAH!! So grateful to have met u. I literally wouldn't be where I am if it weren't for your kind heart. Love u boo!!",
+      "confidence": "high",
+      "source": "multiple frames"
+    },
+    {
+      "id": 8,
+      "recipient": null,
+      "author": "Mani",
+      "date": "Apr 23",
+      "text": "Micah!! We've known each other 16 years now!! Happy 30th 🥳🎂 As this benchmark hits, I hope you continue to bring your childhood curiosities and imaginative creativity to every endeavor you choose. Wishing many more revolutions for ya! Much prosperity, love, and positive energy 🫶🏼✨",
+      "confidence": "high",
+      "source": "multiple frames"
+    },
+    {
+      "id": 9,
+      "recipient": "Micah",
+      "author": "Sarang",
+      "date": "Apr 23, 2025 at 10:19 AM",
+      "text": "I met Micah way back in 2015 (10 years ago??) when we were proctors / student research assistants at the good ol' TACC Vislab at UT Austin. We collab'd on a bunch of cool projects on multi touch and immersive technologies and generally had good times. Over the summer I remember making a cool promo video for Google Glass research and Micah was the star actor and our buddy RJ made the background piano music. Happy birthday bro! Keep in touch 🚀",
+      "confidence": "high",
+      "source": "modal view frames (opened on camera)"
+    },
+    {
+      "id": 10,
+      "recipient": "Micah",
+      "author": "Geo",
+      "date": "May 9",
+      "text": "I love you",
+      "confidence": "high",
+      "source": "modal view frame",
+      "note": "This is Micah's own note (authored as Geo), shown in a modal"
+    },
+    {
+      "id": 11,
+      "recipient": null,
+      "author": "Jeff Dudan",
+      "date": "Apr 23",
+      "text": "It's been awesome seeing you go from a cyborg in highschool to an emotional wreck like everyone else! Glad to call you my brother!",
+      "confidence": "medium",
+      "source": "video frames",
+      "author_uncertain": "OCR read this as 'Niff Daddy' / 'NFR Buddy' / 'Jeff Dudan' in different frames — likely 'Jeff Dudan'"
+    },
+    {
+      "id": 12,
+      "recipient": "Micah",
+      "author": "unknown",
+      "date": null,
+      "text": "Micah, being a posse scholar with you and going through the 4 years at UT, seeing you approached everything with a 'glass is half full' attitude was always inspiring for posse mates like me.",
+      "confidence": "medium",
+      "source": "Replit agent commit screenshot (c6f618c0)",
+      "author_uncertain": "signed 'Anonymous'"
+    },
+    {
+      "id": 13,
+      "recipient": null,
+      "author": "unknown",
+      "date": null,
+      "text": "…friend and brother. Lord willing, in this lifetime and the next, I got you!",
+      "confidence": "low",
+      "source": "video frames",
+      "recovery_note": "Only the bottom half of this note was ever visible on camera. Beginning is unrecoverable."
+    },
+    {
+      "id": 14,
+      "recipient": null,
+      "author": "unknown",
+      "date": null,
+      "text": "…birthday marks the beginning of a year (and decade!) filled with joy,",
+      "confidence": "low",
+      "source": "video frames",
+      "recovery_note": "Middle fragment only. Beginning and end never appeared on camera."
+    },
+    {
+      "id": 15,
+      "recipient": "Micah",
+      "author": "unknown",
+      "date": null,
+      "text": "Micah, you are one of the most thoughtful, creative, and inspirational people that I…",
+      "confidence": "low",
+      "source": "thumbnail bottom row",
+      "recovery_note": "Cut off by the bottom edge of the frame."
+    },
+    {
+      "id": 16,
+      "recipient": null,
+      "author": "unknown",
+      "date": null,
+      "text": "Happy 30th Birthday! It feels like just yesterday we were at UT Austin together…",
+      "confidence": "low",
+      "source": "thumbnail bottom row",
+      "recovery_note": "Cut off by the bottom edge of the frame."
+    },
+    {
+      "id": 17,
+      "recipient": null,
+      "author": "Anonymous",
+      "date": "Apr 23",
+      "text": "Happy birthday! Yer cute.",
+      "confidence": "medium",
+      "source": "thumbnail (partially hidden by Add button)"
+    },
+    {
+      "id": 18,
+      "recipient": null,
+      "author": "unknown",
+      "date": "Apr 23",
+      "text": "…day 🎂🎈 🥰",
+      "confidence": "low",
+      "source": "thumbnail (partially obscured)",
+      "recovery_note": "Only a trailing fragment visible. Almost entirely lost."
+    }
+  ],
+  "still_missing": {
+    "estimated_unrecovered": "unknown",
+    "reasoning": "The video is a 2-minute demo, not an exhaustive capture. Notes that were never scrolled into view during the recording are unrecoverable from any known source. 18 notes were visible at some point; the original wall likely held more, given the video shows 'load more' behavior and pagination at 12 notes per page.",
+    "known_gaps": [
+      "Full text of notes 13, 14, 15, 16, 18",
+      "Author names for notes 12, 13, 14, 15, 16, 18",
+      "Any notes beyond what the demo happened to scroll past"
+    ],
+    "exhausted_sources": [
+      "Replit/Neon database — deleted, ~1 week retention, expired by months",
+      "Replit support — confirmed data unrecoverable",
+      "Wayback Machine — zero snapshots of warmfuzzywall.replit.app or warm-fuzzy-wall.replit.app",
+      "Live deployment — API returns 500, database connection dead",
+      "Git history — no dumps, exports, or seed data ever committed"
+    ]
+  },
+  "next_steps": [
+    "Ask posse mates / group chats directly — anyone who screenshotted the wall is a data source",
+    "Check personal camera roll and Google Photos around Apr 23 - May 9, 2025",
+    "Check Downloads folder for a JSON export (the app had an Export button at /api/notes/export) — this would recover everything perfectly",
+    "Ask Sarang, Hope, Mani, Allie, JD, TB, Crystal Gravy — named authors can confirm their own note text and may have others"
+  ]
+}
