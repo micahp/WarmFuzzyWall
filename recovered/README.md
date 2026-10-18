@@ -19,13 +19,15 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 ## Complete notes
 
-### 1. To: Geo — Hope — May 2
+### 1. To: Geo 🎂🎆🎁🍾 — Hope — May 2
 
-> Happy Birthday Geo 🥳 You amazing, creative, technologically brilliant, phenomenal soul, you! Keep creating the music ever inspiring Humanity to sing. Wishing you 30 more extraordinary years ahead - and a thousand more greater still. - Hope 🍨 Well
+> Happy Birthday Geo 🥳 You amazing, creative, technologically brilliant, phenomenal soul, you! Keep creating the music ever inspiring Humanity to sing. Wishing you 30 more extraordinary years ahead - and a thousand more greater still. - Hope 🍦 Well
 
 — **Hope**
 
 *Full card legible at 1080p. Header reads 'To: Geo 🪩🎴🪅'. Sign-off is unusual: '- Hope 🍨 Well'.*
+
+*Header reads 'To: Geo 🎂🎆🎁🍾' (birthday cake, fireworks, gift, champagne) - confirmed by Micah and by a 10x zoom of the header at 1080p. Sign-off is unusual: '- Hope 🍦 Well'.*
 
 ### 2. Crystal Gravy — Apr 25
 
@@ -58,6 +60,8 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 > Eyyyy! Happy fu*cckkkiiinnng birthday!! It's been a pleasure to have met you and hoping the best for you man! Good luck on your journey and make those moments count!
 
 — **JD**
+
+*Highest-resolution panel read renders the closing as '...make those moments count! A' while a second full-card read ends at 'count!' with no trailing character. The stray 'A' is unverified and may be a rendering artifact; text kept without it.*
 
 ### 7. Allie — Apr 23
 
@@ -95,11 +99,11 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 *Signature was previously read as "Jeff Dudan" / "Niff Daddy" / "NFR Buddy". A larger screenshot resolves it as "NFT Daddy", addressed "To: G.Ppls".*
 
-### 12. To: Micah — unknown
+### 12. To: Micah — Anonymous — Apr 23
 
 > Micah, being a posse scholar with you and going through the 4 years at UT, and seeing you approached everything with an "glass is half full" attitude was always inspiring for posse mates like me.
 
-— **unknown**
+— **Anonymous**
 
 *Previously a medium-confidence fragment reconstructed from a Replit commit screenshot that cut off mid-sentence. Confirmed verbatim, including the original "an glass is half full" typo.*
 
@@ -111,6 +115,8 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 *COMPLETE. Previously logged as TWO separate fragments (old #13 and old #15) because the card sat at a frame edge in the video: one view showed only its tail, another only its head. The full-resolution screenshot shows a single continuous note, start to finish.*
 
+*No 'To:' header on this card (verified by cropping the full card bounds). Card is orange, starts at 'Micah, you are...' and ends '- Bryan / Apr 23'.*
+
 ### 14. Quana - UTP3 — Apr 23
 
 > Happy 30th Birthday! It feels like just yesterday we were at UT Austin together with Posse, and now here you are-thriving, evolving, and creating amazing things. It's been such a joy to watch your journey and see all the cool, inspiring ideas you bring to life. I hope this birthday marks the beginning of a year (and decade!) filled with joy, growth, and everything your heart desires. You deserve all the good things coming your way. Keep shining!
@@ -119,7 +125,7 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 *COMPLETE. Previously logged as TWO fragments (old #14 and old #16) - head and tail of the same card, split because no single video frame held the whole thing. The full-resolution screenshot shows it end to end.*
 
-*Signature reads as both 'Quana' and 'Quiana' across frames. Independent high-resolution reads favor 'Quana'; kept as most likely.*
+*Signature reads 'Quana - UTP3'. Letter-by-letter verification at 1080p confirms Q-u-a-n-a; earlier reads of 'Quiana' and 'Quenna' were OCR drift on small compressed text. Body confirmed to end with 'Keep shining!'.*
 
 ### 15. Anonymous — Apr 23
 
@@ -131,11 +137,13 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 ### 16. Anonymous — Apr 23
 
-> Micah Happy Birthday 🎂🎁 🥳❤️ Love you GG❤️🥰
+> Micah Happy Birthday 🎂🎁 🥂❤️ Love you GG❤️🥰
 
 — **Anonymous**
 
 *Previously read as an unrecoverable fragment ("…day 🎂🎈 🥰"). A larger screenshot revealed the full note, including the "Love you GG" signature.*
+
+*Signed '- Anonymous' / 'Apr 23' in the footer; 'GG' appears inside the message body as a nickname.*
 
 ### 17. Margrit Pez — Apr 23
 
