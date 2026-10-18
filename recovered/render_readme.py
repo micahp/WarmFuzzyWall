@@ -5,6 +5,48 @@ import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
+FRONT = """# Warm and Fuzzies Wall — Recovered Notes
+
+**Micah's 30th birthday wall.** Originally a Replit app (`WarmFuzzyWall`) backed by a
+Neon Postgres database provisioned through Replit. When the Replit subscription lapsed,
+the database was deleted. Replit's retention window is about a week, and the lapse went
+unnoticed for months, so the data was gone before anyone could export it.
+
+This is what survived.
+
+Recovered from the [YouTube demo video](https://youtu.be/_PtelREnQqY), its thumbnail, a
+screenshot the Replit agent attached to a commit, and a screenshot of the live wall.
+
+---
+"""
+
+BACK = """---
+
+## What didn't get recovered
+
+The video is a two-minute demo, not an exhaustive capture. It only shows what Micah
+happened to scroll past. The app paginated at 12 notes per page, so the original wall
+was almost certainly larger than what's here.
+
+**Dead ends, all confirmed:**
+
+- **Neon Postgres database** — deleted with the subscription. ~1 week retention, expired by months.
+- **Replit support** — confirmed unrecoverable.
+- **Wayback Machine** — zero snapshots. The site was a client-side app that crawlers never captured.
+- **The live deployment** — `warm-fuzzy-wall--geoppls.replit.app` still serves the UI, but `/api/notes` returns 500. The database connection is dead.
+- **Git history** — no dumps, exports, or seed data were ever committed. Verified against every commit.
+
+## Places left to look
+
+1. **Your Downloads folder.** The app had an Export button hitting `/api/notes/export` that returned the entire database as JSON to the browser. If you ever clicked it, that file has everything and this document is obsolete.
+2. **Your camera roll / Google Photos.** You built this for your birthday — you probably screenshotted it.
+3. **Group chats.** Anyone who screenshotted their own note is a direct source. One screenshot already recovered a note the video never showed.
+4. **The named authors.** Hope, Mani, Allie, JD, TB, Crystal Gravy, Sarang, Jeff Dudan, Margrit Pez. They wrote these — they can confirm the text and may have their own copies.
+
+If an export turns up, `import_notes.py` will merge it with what's here instead of
+overwriting, and `render_readme.py` will regenerate this document.
+"""
+
 
 def block(n):
     lines = []
@@ -38,11 +80,7 @@ def main():
     full = [n for n in d['notes'] if n['confidence'] != 'low' and not n['text'].startswith('…')]
     frag = [n for n in d['notes'] if n not in full]
 
-    out = []
-    out.append('# Warm and Fuzzies Wall — Recovered Notes')
-    out.append('')
-    out.append(f"**{d['meta'].get('subject', '')}.** Recovered {d['meta']['recovered_on']}.")
-    out.append('')
+    out = [FRONT, '']
     out.append(f"**{len(d['notes'])} notes recovered** "
                f"({len(full)} complete or near-complete, {len(frag)} fragments).")
     out.append('')
@@ -57,14 +95,15 @@ def main():
         out.append('')
         out.append('## Fragments')
         out.append('')
-        out.append('Only these parts were ever visible on camera. The rest is gone.')
+        out.append('Only these parts were ever visible. The rest is gone.')
         out.append('')
         for n in frag:
             out.append(block(n))
+    out.append(BACK)
 
     with open(os.path.join(HERE, 'README.md'), 'w') as f:
         f.write('\n'.join(out))
-    print(f"wrote README.md ({len(full)} complete, {len(frag)} fragments)")
+    print(f"wrote README.md ({len(full)} complete, {len(frag)} fragments, {len(d['notes'])} total)")
 
 
 if __name__ == '__main__':

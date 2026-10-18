@@ -1,8 +1,19 @@
 # Warm and Fuzzies Wall — Recovered Notes
 
-**Micah's 30th birthday wall.** Recovered 2026-10-18.
+**Micah's 30th birthday wall.** Originally a Replit app (`WarmFuzzyWall`) backed by a
+Neon Postgres database provisioned through Replit. When the Replit subscription lapsed,
+the database was deleted. Replit's retention window is about a week, and the lapse went
+unnoticed for months, so the data was gone before anyone could export it.
 
-**18 notes recovered** (13 complete or near-complete, 5 fragments).
+This is what survived.
+
+Recovered from the [YouTube demo video](https://youtu.be/_PtelREnQqY), its thumbnail, a
+screenshot the Replit agent attached to a commit, and a screenshot of the live wall.
+
+---
+
+
+**19 notes recovered** (14 complete or near-complete, 5 fragments).
 
 ---
 
@@ -80,11 +91,11 @@
 
 ### 12. To: Micah — unknown
 
-> Micah, being a posse scholar with you and going through the 4 years at UT, seeing you approached everything with a 'glass is half full' attitude was always inspiring for posse mates like me.
+> Micah, being a posse scholar with you and going through the 4 years at UT, and seeing you approached everything with an "glass is half full" attitude was always inspiring for posse mates like me.
 
 — **unknown**
 
-*signed 'Anonymous'*
+*Previously a medium-confidence fragment reconstructed from a Replit commit screenshot that cut off mid-sentence. Confirmed verbatim, including the original "an glass is half full" typo.*
 
 ### 17. Anonymous — Apr 23
 
@@ -92,11 +103,19 @@
 
 — **Anonymous**
 
+### 19. Margrit Pez — Apr 23
+
+> Happy Birthday to my Oliver Poppins, May your 30s be your blessed and best years yet! Can't wait to see all the great things I know this next chapter will bring to you and cheers to many more memories together
+
+— **Margrit Pez**
+
+*Never appeared in the demo video. Recovered solely from this screenshot.*
+
 ---
 
 ## Fragments
 
-Only these parts were ever visible on camera. The rest is gone.
+Only these parts were ever visible. The rest is gone.
 
 ### 13. unknown
 
@@ -137,3 +156,29 @@ Only these parts were ever visible on camera. The rest is gone.
 — **unknown**
 
 *Only a trailing fragment visible. Almost entirely lost.*
+
+---
+
+## What didn't get recovered
+
+The video is a two-minute demo, not an exhaustive capture. It only shows what Micah
+happened to scroll past. The app paginated at 12 notes per page, so the original wall
+was almost certainly larger than what's here.
+
+**Dead ends, all confirmed:**
+
+- **Neon Postgres database** — deleted with the subscription. ~1 week retention, expired by months.
+- **Replit support** — confirmed unrecoverable.
+- **Wayback Machine** — zero snapshots. The site was a client-side app that crawlers never captured.
+- **The live deployment** — `warm-fuzzy-wall--geoppls.replit.app` still serves the UI, but `/api/notes` returns 500. The database connection is dead.
+- **Git history** — no dumps, exports, or seed data were ever committed. Verified against every commit.
+
+## Places left to look
+
+1. **Your Downloads folder.** The app had an Export button hitting `/api/notes/export` that returned the entire database as JSON to the browser. If you ever clicked it, that file has everything and this document is obsolete.
+2. **Your camera roll / Google Photos.** You built this for your birthday — you probably screenshotted it.
+3. **Group chats.** Anyone who screenshotted their own note is a direct source. One screenshot already recovered a note the video never showed.
+4. **The named authors.** Hope, Mani, Allie, JD, TB, Crystal Gravy, Sarang, Jeff Dudan, Margrit Pez. They wrote these — they can confirm the text and may have their own copies.
+
+If an export turns up, `import_notes.py` will merge it with what's here instead of
+overwriting, and `render_readme.py` will regenerate this document.

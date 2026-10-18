@@ -23,11 +23,16 @@
         "name": "Replit agent commit screenshots",
         "url": "https://storage.googleapis.com/screenshot-production-us-central1/87268ac1-aa2a-450f-ae87-3f3de7e711a0/",
         "detail": "22 commit-attached screenshots still live on GCS. One captured the wall with a real note."
+      },
+      {
+        "name": "User-supplied screenshot",
+        "url": "local: img_e52f3aaef6c9.png",
+        "detail": "Full-page capture of the wall showing three notes at once. Upgraded the posse-scholar note to full confidence and contributed the Margrit Pez note, which never appeared in the video."
       }
     ],
-    "notes_recovered": 18,
+    "notes_recovered": 19,
     "confidence_legend": {
-      "high": "Full text legible across multiple frames, cross-checked",
+      "high": "Full text legible, cross-checked across sources",
       "medium": "Legible but partially occluded; concatenated from several frames",
       "low": "Fragmentary — only part of the note ever appeared on camera"
     }
@@ -140,10 +145,10 @@
       "recipient": "Micah",
       "author": "unknown",
       "date": null,
-      "text": "Micah, being a posse scholar with you and going through the 4 years at UT, seeing you approached everything with a 'glass is half full' attitude was always inspiring for posse mates like me.",
-      "confidence": "medium",
-      "source": "Replit agent commit screenshot (c6f618c0)",
-      "author_uncertain": "signed 'Anonymous'"
+      "text": "Micah, being a posse scholar with you and going through the 4 years at UT, and seeing you approached everything with an \"glass is half full\" attitude was always inspiring for posse mates like me.",
+      "confidence": "high",
+      "source": "user-supplied screenshot (2026-10-19) + Replit commit screenshot",
+      "recovery_note": "Previously a medium-confidence fragment reconstructed from a Replit commit screenshot that cut off mid-sentence. Confirmed verbatim, including the original \"an glass is half full\" typo."
     },
     {
       "id": 13,
@@ -203,6 +208,16 @@
       "confidence": "low",
       "source": "thumbnail (partially obscured)",
       "recovery_note": "Only a trailing fragment visible. Almost entirely lost."
+    },
+    {
+      "id": 19,
+      "recipient": null,
+      "author": "Margrit Pez",
+      "date": "Apr 23",
+      "text": "Happy Birthday to my Oliver Poppins, May your 30s be your blessed and best years yet! Can't wait to see all the great things I know this next chapter will bring to you and cheers to many more memories together",
+      "confidence": "high",
+      "source": "user-supplied screenshot (2026-10-19)",
+      "note": "Never appeared in the demo video. Recovered solely from this screenshot."
     }
   ],
   "still_missing": {
