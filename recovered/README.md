@@ -13,7 +13,7 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 ---
 
 
-**19 notes recovered** (15 complete, 4 clipped at a frame edge).
+**17 notes recovered** (17 complete, 0 clipped at a frame edge).
 
 ---
 
@@ -21,13 +21,15 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 ### 1. To: Geo — Hope — May 2
 
-> Happy Birthday Geo 🥳 You amazing, creative, technologically brilliant, phenomenal soul, you! Keep creating the music ever inspiring Humanity to sing. Wishing you 30 more extraordinary years ahead - and a thousand more greater still. - Hope 🎈 Well
+> Happy Birthday Geo 🥳 You amazing, creative, technologically brilliant, phenomenal soul, you! Keep creating the music ever inspiring Humanity to sing. Wishing you 30 more extraordinary years ahead - and a thousand more greater still. - Hope 🍨 Well
 
 — **Hope**
 
+*Full card legible at 1080p. Header reads 'To: Geo 🪩🎴🪅'. Sign-off is unusual: '- Hope 🍨 Well'.*
+
 ### 2. Crystal Gravy — Apr 25
 
-> Yoooo Mr geo you're the man! Great to know ya. Happy birthday!
+> Yoooo Mr geo you're the man! Great to know ya Happy birthday!
 
 — **Crystal Gravy**
 
@@ -101,7 +103,25 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 *Previously a medium-confidence fragment reconstructed from a Replit commit screenshot that cut off mid-sentence. Confirmed verbatim, including the original "an glass is half full" typo.*
 
-### 17. Anonymous — Apr 23
+### 13. To: Micah — Bryan — Apr 23
+
+> Micah, you are one of the most thoughtful, creative, and inspirational people that I know and may as well be an angel in human form!! We met literally trying to build a safer and better world for everyone 💯 What a blessing and privilege to call you friend and brother. Lord willing, in this lifetime and the next, I got you!!
+
+— **Bryan**
+
+*COMPLETE. Previously logged as TWO separate fragments (old #13 and old #15) because the card sat at a frame edge in the video: one view showed only its tail, another only its head. The full-resolution screenshot shows a single continuous note, start to finish.*
+
+### 14. Quana - UTP3 — Apr 23
+
+> Happy 30th Birthday! It feels like just yesterday we were at UT Austin together with Posse, and now here you are-thriving, evolving, and creating amazing things. It's been such a joy to watch your journey and see all the cool, inspiring ideas you bring to life. I hope this birthday marks the beginning of a year (and decade!) filled with joy, growth, and everything your heart desires. You deserve all the good things coming your way. Keep shining!
+
+— **Quana - UTP3**
+
+*COMPLETE. Previously logged as TWO fragments (old #14 and old #16) - head and tail of the same card, split because no single video frame held the whole thing. The full-resolution screenshot shows it end to end.*
+
+*Signature reads as both 'Quana' and 'Quiana' across frames. Independent high-resolution reads favor 'Quana'; kept as most likely.*
+
+### 15. Anonymous — Apr 23
 
 > Happy birthday! Yer cute
 
@@ -109,7 +129,7 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 *Partially obscured by the Add button in the video; fully legible in the larger screenshot.*
 
-### 18. Anonymous — Apr 23
+### 16. Anonymous — Apr 23
 
 > Micah Happy Birthday 🎂🎁 🥳❤️ Love you GG❤️🥰
 
@@ -117,53 +137,13 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 *Previously read as an unrecoverable fragment ("…day 🎂🎈 🥰"). A larger screenshot revealed the full note, including the "Love you GG" signature.*
 
-### 19. Margrit Pez — Apr 23
+### 17. Margrit Pez — Apr 23
 
 > Happy Birthday to my Oliver Poppins, May your 30s be your blessed and best years yet! Can't wait to see all the great things I know this next chapter will bring to you and cheers to many more memories together
 
 — **Margrit Pez**
 
 *Never appeared in the demo video. Recovered solely from this screenshot.*
-
----
-
-## Clipped notes
-
-Most of each of these was recovered, but they open or close mid-sentence at a frame edge. The missing words were never on screen in any surviving source.
-
-### 13. Bryan — Apr 23
-
-> …friend and brother. Lord willing, in this lifetime and the next, I got you!
-
-— **Bryan**
-
-*Author and date recovered from a larger screenshot. The note's opening still sat above the frame edge, so the first half of the sentence remains lost.*
-
-### 14. Quana - UTP3 — Apr 23
-
-> …birthday marks the beginning of a year (and decade!) filled with joy, growth, and everything your heart desires. You deserve all the good things coming your way. Keep shining!
-
-— **Quana - UTP3**
-
-*Body almost fully recovered from a larger screenshot, plus the signature and date. The sentence still opens mid-clause; whatever preceded "…birthday marks" was above the frame edge.*
-
-### 15. To: Micah — unknown
-
-> Micah, you are one of the most thoughtful, creative, and inspirational people that I know and may as well be an angel in human form!! We met literally trying to build a safer and better world for everyone 💯 What a blessing and privilege to call you
-
-— **unknown**
-
-*Nearly complete from a larger screenshot. Still ends mid-sentence at the frame edge; the closing lines and signature are lost. Note the original "privledge" typo, corrected to "privilege" here — see note field.*
-
-*Original screenshot reads "privledge" (typo).*
-
-### 16. unknown
-
-> Happy 30th Birthday! It feels like just yesterday we were at UT Austin together with Posse, and now here you are - thriving, evolving, and creating amazing things. It's been such a joy to watch your journey and see all the cool, inspiring ideas
-
-— **unknown**
-
-*Nearly complete from a larger screenshot. Still cuts off mid-sentence at the frame edge; the ending and signature are lost.*
 
 ---
 
