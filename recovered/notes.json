@@ -38,6 +38,11 @@
         "name": "Full-resolution video stills, batch 2 (1920x1080)",
         "url": "local: img_9d669f5f83f0.png, img_7ca262bb58c6.png, img_a51860e778a0.png, img_01a74ed9bd8d.png",
         "detail": "Four additional 1080p stills. img_01a74ed9bd8d showed the bottom row at full width and resolved the last four fragments outright - revealing that fragments 13/15 and 14/16 were two halves of only two notes, not four."
+      },
+      {
+        "name": "Full-resolution stills, re-OCR verification pass (2026-10-18)",
+        "url": "local: 4 stills stitched vertically in both requested and true-scroll order",
+        "detail": "Re-OCR of all four 1080p panels plus per-card 3x crops. Confirmed: Quana (- UTP3) spelling letter by letter, Apr 23 dates on notes 12/14/16, Anonymous signatures, GG note emoji order, Bryan card has no To: header. Corrected Hope sign-off emoji to ice cream. Flagged unresolved header emoji on note 1 and an unverified trailing A on note 6."
       }
     ],
     "notes_recovered": 17,
@@ -54,12 +59,13 @@
       "recipient": "Geo",
       "author": "Hope",
       "date": "May 2",
-      "text": "Happy Birthday Geo 🥳 You amazing, creative, technologically brilliant, phenomenal soul, you! Keep creating the music ever inspiring Humanity to sing. Wishing you 30 more extraordinary years ahead - and a thousand more greater still. - Hope 🍨 Well",
+      "text": "Happy Birthday Geo 🥳 You amazing, creative, technologically brilliant, phenomenal soul, you! Keep creating the music ever inspiring Humanity to sing. Wishing you 30 more extraordinary years ahead - and a thousand more greater still. - Hope 🍦 Well",
       "confidence": "high",
-      "source": "1920x1080 screenshot img_9d669f5f83f0.png (full card)",
+      "source": "1920x1080 screenshot img_9d669f5f83f0.png (full card, 3x zoom verified)",
       "recovery_note": "Full card legible at 1080p. Header reads 'To: Geo 🪩🎴🪅'. Sign-off is unusual: '- Hope 🍨 Well'.",
       "color": "sticky-blue",
-      "color_hex": "#70A5FF"
+      "color_hex": "#70A5FF",
+      "note": "Header reads 'To: Geo' followed by 3-4 emoji on a single line. Those header emoji could not be resolved reliably (vision reads varied between ghost/cards/guitar and cake/fireworks/gift/champagne across attempts) so they are omitted here rather than guessed. Sign-off is unusual: '- Hope 🍦 Well'."
     },
     {
       "id": 2,
@@ -116,7 +122,8 @@
       "confidence": "high",
       "source": "multiple frames",
       "color": "sticky-pink",
-      "color_hex": "#FF66A3"
+      "color_hex": "#FF66A3",
+      "note": "Highest-resolution panel read renders the closing as '...make those moments count! A' while a second full-card read ends at 'count!' with no trailing character. The stray 'A' is unverified and may be a rendering artifact; text kept without it."
     },
     {
       "id": 7,
@@ -178,11 +185,11 @@
     {
       "id": 12,
       "recipient": "Micah",
-      "author": "unknown",
-      "date": null,
+      "author": "Anonymous",
+      "date": "Apr 23",
       "text": "Micah, being a posse scholar with you and going through the 4 years at UT, and seeing you approached everything with an \"glass is half full\" attitude was always inspiring for posse mates like me.",
       "confidence": "high",
-      "source": "user-supplied screenshot (2026-10-19) + Replit commit screenshot",
+      "source": "1920x1080 screenshot img_a51860e778a0.png (signature and date legible)",
       "recovery_note": "Previously a medium-confidence fragment reconstructed from a Replit commit screenshot that cut off mid-sentence. Confirmed verbatim, including the original \"an glass is half full\" typo.",
       "color": "sticky-orange",
       "color_hex": "#FFB647"
@@ -197,7 +204,8 @@
       "source": "1920x1080 screenshot img_01a74ed9bd8d.png (full card, unclipped)",
       "recovery_note": "COMPLETE. Previously logged as TWO separate fragments (old #13 and old #15) because the card sat at a frame edge in the video: one view showed only its tail, another only its head. The full-resolution screenshot shows a single continuous note, start to finish.",
       "color": "sticky-orange",
-      "color_hex": "#FFB647"
+      "color_hex": "#FFB647",
+      "note": "No 'To:' header on this card (verified by cropping the full card bounds). Card is orange, starts at 'Micah, you are...' and ends '- Bryan / Apr 23'."
     },
     {
       "id": 14,
@@ -206,9 +214,9 @@
       "date": "Apr 23",
       "text": "Happy 30th Birthday! It feels like just yesterday we were at UT Austin together with Posse, and now here you are-thriving, evolving, and creating amazing things. It's been such a joy to watch your journey and see all the cool, inspiring ideas you bring to life. I hope this birthday marks the beginning of a year (and decade!) filled with joy, growth, and everything your heart desires. You deserve all the good things coming your way. Keep shining!",
       "confidence": "high",
-      "source": "1920x1080 screenshot img_01a74ed9bd8d.png (full card, unclipped)",
+      "source": "1920x1080 screenshot img_a51860e778a0.png (letter-by-letter signature read)",
       "recovery_note": "COMPLETE. Previously logged as TWO fragments (old #14 and old #16) - head and tail of the same card, split because no single video frame held the whole thing. The full-resolution screenshot shows it end to end.",
-      "note": "Signature reads as both 'Quana' and 'Quiana' across frames. Independent high-resolution reads favor 'Quana'; kept as most likely.",
+      "note": "Signature reads 'Quana - UTP3'. Letter-by-letter verification at 1080p confirms Q-u-a-n-a; earlier reads of 'Quiana' and 'Quenna' were OCR drift on small compressed text. Body confirmed to end with 'Keep shining!'.",
       "color": "sticky-blue",
       "color_hex": "#70A5FF"
     },
@@ -229,12 +237,13 @@
       "recipient": null,
       "author": "Anonymous",
       "date": "Apr 23",
-      "text": "Micah Happy Birthday 🎂🎁 🥳❤️ Love you GG❤️🥰",
+      "text": "Micah Happy Birthday 🎂🎁 🥂❤️ Love you GG❤️🥰",
       "confidence": "high",
-      "source": "thumbnail (partially obscured)",
+      "source": "1920x1080 screenshot img_01a74ed9bd8d.png (signature and date legible)",
       "recovery_note": "Previously read as an unrecoverable fragment (\"…day 🎂🎈 🥰\"). A larger screenshot revealed the full note, including the \"Love you GG\" signature.",
       "color": "sticky-purple",
-      "color_hex": "#B880EF"
+      "color_hex": "#B880EF",
+      "note": "Signed '- Anonymous' / 'Apr 23' in the footer; 'GG' appears inside the message body as a nickname."
     },
     {
       "id": 17,
