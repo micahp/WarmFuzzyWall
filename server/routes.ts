@@ -35,7 +35,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
   });
 
   // Get note by id
-  app.get("/api/notes/:id", async (req, res) => {
+  // The :id pattern is constrained to digits so this can never shadow literal
+  // sibling routes like /api/notes/export regardless of registration order.
+  app.get("/api/notes/:id(\\d+)", async (req, res) => {
     try {
       const id = parseInt(req.params.id);
       if (isNaN(id)) {
