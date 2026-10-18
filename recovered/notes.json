@@ -45,7 +45,8 @@
       "high": "Full text recovered and legible, cross-checked across sources",
       "medium": "Most of the note recovered, but it opens or closes mid-sentence at a frame edge (none currently)",
       "low": "Fragmentary (none currently)"
-    }
+    },
+    "color_palette": "see colors.json - exact palette from client/src/index.css plus per-note color mapping"
   },
   "notes": [
     {
@@ -56,7 +57,9 @@
       "text": "Happy Birthday Geo 🥳 You amazing, creative, technologically brilliant, phenomenal soul, you! Keep creating the music ever inspiring Humanity to sing. Wishing you 30 more extraordinary years ahead - and a thousand more greater still. - Hope 🍨 Well",
       "confidence": "high",
       "source": "1920x1080 screenshot img_9d669f5f83f0.png (full card)",
-      "recovery_note": "Full card legible at 1080p. Header reads 'To: Geo 🪩🎴🪅'. Sign-off is unusual: '- Hope 🍨 Well'."
+      "recovery_note": "Full card legible at 1080p. Header reads 'To: Geo 🪩🎴🪅'. Sign-off is unusual: '- Hope 🍨 Well'.",
+      "color": "sticky-blue",
+      "color_hex": "#70A5FF"
     },
     {
       "id": 2,
@@ -65,7 +68,9 @@
       "date": "Apr 25",
       "text": "Yoooo Mr geo you're the man! Great to know ya Happy birthday!",
       "confidence": "high",
-      "source": "1920x1080 screenshot img_9d669f5f83f0.png (full card)"
+      "source": "1920x1080 screenshot img_9d669f5f83f0.png (full card)",
+      "color": "sticky-teal",
+      "color_hex": "#28BDB1"
     },
     {
       "id": 3,
@@ -74,7 +79,9 @@
       "date": "Apr 24",
       "text": "Happy birthday to the most creative and inspiring person I have ever met. A person with more drive and intelligence than most. Thank God for the parking meter we met at. May the next 30 years be even better than your last!",
       "confidence": "high",
-      "source": "multiple frames"
+      "source": "multiple frames",
+      "color": "sticky-teal",
+      "color_hex": "#28BDB1"
     },
     {
       "id": 4,
@@ -83,7 +90,9 @@
       "date": "Apr 24",
       "text": "You've always been so driven, curious, & experimental. Happy Birthday! Hope this new decade is grounded in community, awe, & safe places to land 🕊️",
       "confidence": "high",
-      "source": "multiple frames"
+      "source": "multiple frames",
+      "color": "sticky-teal",
+      "color_hex": "#28BDB1"
     },
     {
       "id": 5,
@@ -94,7 +103,9 @@
       "confidence": "high",
       "source": "video frames + thumbnail (top of note cut off in early frames)",
       "note_text_original_typos_preserved": true,
-      "recovery_note": "Signature \"JP\" and the closing lines (\"...that. Happy Birthday!\") recovered."
+      "recovery_note": "Signature \"JP\" and the closing lines (\"...that. Happy Birthday!\") recovered.",
+      "color": "sticky-purple",
+      "color_hex": "#B880EF"
     },
     {
       "id": 6,
@@ -103,7 +114,9 @@
       "date": "Apr 23",
       "text": "Eyyyy! Happy fu*cckkkiiinnng birthday!! It's been a pleasure to have met you and hoping the best for you man! Good luck on your journey and make those moments count!",
       "confidence": "high",
-      "source": "multiple frames"
+      "source": "multiple frames",
+      "color": "sticky-pink",
+      "color_hex": "#FF66A3"
     },
     {
       "id": 7,
@@ -112,7 +125,9 @@
       "date": "Apr 23",
       "text": "MICAH!! So grateful to have met u. I literally wouldn't be where I am if it weren't for your kind heart. Love u boo!!",
       "confidence": "high",
-      "source": "multiple frames"
+      "source": "multiple frames",
+      "color": "sticky-pink",
+      "color_hex": "#FF66A3"
     },
     {
       "id": 8,
@@ -121,7 +136,9 @@
       "date": "Apr 23",
       "text": "Micah!! We've known each other 16 years now!! Happy 30th 🥳🎂 As this benchmark hits, I hope you continue to bring your childhood curiosities and imaginative creativity to every endeavor you choose. Wishing many more revolutions for ya! Much prosperity, love, and positive energy 🫶🏼✨",
       "confidence": "high",
-      "source": "multiple frames"
+      "source": "multiple frames",
+      "color": "sticky-green",
+      "color_hex": "#8FDCAF"
     },
     {
       "id": 9,
@@ -131,7 +148,9 @@
       "text": "I met Micah way back in 2015 (10 years ago??) when we were proctors / student research assistants at the good ol TACC Vislab at UT Austin. We collab'd on a bunch of cool projects on multi touch and immersive technologies and generally had good times. Over the summer I remember making a cool promo video for Google Glass research and Micah was the star actor and our buddy RJ made the background piano music. Happy birthday bro! Keep in touch 🚀",
       "confidence": "high",
       "source": "1080p screenshot img_74ae1a07e565.png (full card, unclipped)",
-      "recovery_note": "Complete. Ending recovered 2026-10-18 from a full-resolution screenshot showing the entire card including closing line and rocket emoji."
+      "recovery_note": "Complete. Ending recovered 2026-10-18 from a full-resolution screenshot showing the entire card including closing line and rocket emoji.",
+      "color": "sticky-green",
+      "color_hex": "#8FDCAF"
     },
     {
       "id": 10,
@@ -141,7 +160,8 @@
       "text": "I love you",
       "confidence": "high",
       "source": "modal view frame",
-      "note": "This is Micah's own note (authored as Geo), shown in a modal"
+      "note": "This is Micah's own note (authored as Geo), shown in a modal",
+      "color": null
     },
     {
       "id": 11,
@@ -151,7 +171,9 @@
       "text": "It's been awesome seeing you go from a cyborg in highschool to an emotional wreck like everyone else! Glad to call you my brother!",
       "confidence": "high",
       "source": "user-supplied screenshots (larger, cleaner) + video frames",
-      "recovery_note": "Signature was previously read as \"Jeff Dudan\" / \"Niff Daddy\" / \"NFR Buddy\". A larger screenshot resolves it as \"NFT Daddy\", addressed \"To: G.Ppls\"."
+      "recovery_note": "Signature was previously read as \"Jeff Dudan\" / \"Niff Daddy\" / \"NFR Buddy\". A larger screenshot resolves it as \"NFT Daddy\", addressed \"To: G.Ppls\".",
+      "color": "sticky-pink",
+      "color_hex": "#FF66A3"
     },
     {
       "id": 12,
@@ -161,7 +183,9 @@
       "text": "Micah, being a posse scholar with you and going through the 4 years at UT, and seeing you approached everything with an \"glass is half full\" attitude was always inspiring for posse mates like me.",
       "confidence": "high",
       "source": "user-supplied screenshot (2026-10-19) + Replit commit screenshot",
-      "recovery_note": "Previously a medium-confidence fragment reconstructed from a Replit commit screenshot that cut off mid-sentence. Confirmed verbatim, including the original \"an glass is half full\" typo."
+      "recovery_note": "Previously a medium-confidence fragment reconstructed from a Replit commit screenshot that cut off mid-sentence. Confirmed verbatim, including the original \"an glass is half full\" typo.",
+      "color": "sticky-orange",
+      "color_hex": "#FFB647"
     },
     {
       "id": 13,
@@ -171,7 +195,9 @@
       "text": "Micah, you are one of the most thoughtful, creative, and inspirational people that I know and may as well be an angel in human form!! We met literally trying to build a safer and better world for everyone 💯 What a blessing and privilege to call you friend and brother. Lord willing, in this lifetime and the next, I got you!!",
       "confidence": "high",
       "source": "1920x1080 screenshot img_01a74ed9bd8d.png (full card, unclipped)",
-      "recovery_note": "COMPLETE. Previously logged as TWO separate fragments (old #13 and old #15) because the card sat at a frame edge in the video: one view showed only its tail, another only its head. The full-resolution screenshot shows a single continuous note, start to finish."
+      "recovery_note": "COMPLETE. Previously logged as TWO separate fragments (old #13 and old #15) because the card sat at a frame edge in the video: one view showed only its tail, another only its head. The full-resolution screenshot shows a single continuous note, start to finish.",
+      "color": "sticky-orange",
+      "color_hex": "#FFB647"
     },
     {
       "id": 14,
@@ -182,7 +208,9 @@
       "confidence": "high",
       "source": "1920x1080 screenshot img_01a74ed9bd8d.png (full card, unclipped)",
       "recovery_note": "COMPLETE. Previously logged as TWO fragments (old #14 and old #16) - head and tail of the same card, split because no single video frame held the whole thing. The full-resolution screenshot shows it end to end.",
-      "note": "Signature reads as both 'Quana' and 'Quiana' across frames. Independent high-resolution reads favor 'Quana'; kept as most likely."
+      "note": "Signature reads as both 'Quana' and 'Quiana' across frames. Independent high-resolution reads favor 'Quana'; kept as most likely.",
+      "color": "sticky-blue",
+      "color_hex": "#70A5FF"
     },
     {
       "id": 15,
@@ -192,7 +220,9 @@
       "text": "Happy birthday! Yer cute",
       "confidence": "high",
       "source": "thumbnail (partially hidden by Add button)",
-      "recovery_note": "Partially obscured by the Add button in the video; fully legible in the larger screenshot."
+      "recovery_note": "Partially obscured by the Add button in the video; fully legible in the larger screenshot.",
+      "color": "sticky-teal",
+      "color_hex": "#28BDB1"
     },
     {
       "id": 16,
@@ -202,7 +232,9 @@
       "text": "Micah Happy Birthday 🎂🎁 🥳❤️ Love you GG❤️🥰",
       "confidence": "high",
       "source": "thumbnail (partially obscured)",
-      "recovery_note": "Previously read as an unrecoverable fragment (\"…day 🎂🎈 🥰\"). A larger screenshot revealed the full note, including the \"Love you GG\" signature."
+      "recovery_note": "Previously read as an unrecoverable fragment (\"…day 🎂🎈 🥰\"). A larger screenshot revealed the full note, including the \"Love you GG\" signature.",
+      "color": "sticky-purple",
+      "color_hex": "#B880EF"
     },
     {
       "id": 17,
@@ -212,7 +244,9 @@
       "text": "Happy Birthday to my Oliver Poppins, May your 30s be your blessed and best years yet! Can't wait to see all the great things I know this next chapter will bring to you and cheers to many more memories together",
       "confidence": "high",
       "source": "user-supplied screenshot (2026-10-19)",
-      "note": "Never appeared in the demo video. Recovered solely from this screenshot."
+      "note": "Never appeared in the demo video. Recovered solely from this screenshot.",
+      "color": "sticky-pink",
+      "color_hex": "#FF66A3"
     }
   ],
   "still_missing": {

@@ -1,0 +1,116 @@
+{
+  "$comment": "Exact sticky-note color palette from the original WarmFuzzyWall source (client/src/index.css) plus the verified color of every recovered note.",
+  "extracted_from": {
+    "file": "client/src/index.css",
+    "lines": "29-36",
+    "commit": "main branch of micahp/WarmFuzzyWall",
+    "note": "The app defined exactly 7 color tokens. Users picked one when adding a note; there was no auto-assignment. So a note's color can only be known by looking at it."
+  },
+  "method": {
+    "how_note_colors_were_determined": "Sampled the dominant non-text pixel from each card body across the full-resolution screenshots, then matched against the 7 source tokens.",
+    "verification": "Every sampled card color landed within a few RGB units of exactly one source token, confirming the mapping is unambiguous.",
+    "caveat": "Screenshots were captured from a compressed video stream, so sampled values run a few points darker/less saturated than the pure CSS values. The CSS values below are the ground truth for recreation."
+  },
+  "palette": [
+    {
+      "token": "sticky-pink",
+      "label": "Pink",
+      "css_var": "--sticky-pink",
+      "hsl": "336 100% 70%",
+      "hex": "#FF66A3",
+      "rgb": [255, 102, 163],
+      "tailwind": "bg-[hsl(var(--sticky-pink))]"
+    },
+    {
+      "token": "sticky-yellow",
+      "label": "Yellow",
+      "css_var": "--sticky-yellow",
+      "hsl": "50 100% 67%",
+      "hex": "#FFE357",
+      "rgb": [255, 227, 87],
+      "tailwind": "bg-[hsl(var(--sticky-yellow))]",
+      "note": "Also the app's default color (STICKY_COLORS[0] in the add-note modal) and the fallback in getColorClass()."
+    },
+    {
+      "token": "sticky-green",
+      "label": "Green",
+      "css_var": "--sticky-green",
+      "hsl": "145 52% 71%",
+      "hex": "#8FDCAF",
+      "rgb": [143, 220, 175],
+      "tailwind": "bg-[hsl(var(--sticky-green))]"
+    },
+    {
+      "token": "sticky-blue",
+      "label": "Blue",
+      "css_var": "--sticky-blue",
+      "hsl": "218 100% 72%",
+      "hex": "#70A5FF",
+      "rgb": [112, 165, 255],
+      "tailwind": "bg-[hsl(var(--sticky-blue))]"
+    },
+    {
+      "token": "sticky-purple",
+      "label": "Purple",
+      "css_var": "--sticky-purple",
+      "hsl": "270 78% 72%",
+      "hex": "#B880EF",
+      "rgb": [184, 128, 239],
+      "tailwind": "bg-[hsl(var(--sticky-purple))]"
+    },
+    {
+      "token": "sticky-orange",
+      "label": "Orange",
+      "css_var": "--sticky-orange",
+      "hsl": "36 100% 64%",
+      "hex": "#FFB647",
+      "rgb": [255, 182, 71],
+      "tailwind": "bg-[hsl(var(--sticky-orange))]"
+    },
+    {
+      "token": "sticky-teal",
+      "label": "Teal",
+      "css_var": "--sticky-teal",
+      "hsl": "175 65% 45%",
+      "hex": "#28BDB1",
+      "rgb": [40, 189, 177],
+      "tailwind": "bg-[hsl(var(--sticky-teal))]"
+    }
+  ],
+  "css_snippet": ":root {\n  --sticky-pink: 336 100% 70%;\n  --sticky-yellow: 50 100% 67%;\n  --sticky-green: 145 52% 71%;\n  --sticky-blue: 218 100% 72%;\n  --sticky-purple: 270 78% 72%;\n  --sticky-orange: 36 100% 64%;\n  --sticky-teal: 175 65% 45%;\n}",
+  "note_colors": [
+    { "id": 1,  "author": "Hope",           "token": "sticky-blue",   "hex": "#70A5FF", "sampled": "#659CFB" },
+    { "id": 2,  "author": "Crystal Gravy",  "token": "sticky-teal",   "hex": "#28BDB1", "sampled": "#29B5A7" },
+    { "id": 3,  "author": "Anonymous",      "token": "sticky-teal",   "hex": "#28BDB1", "sampled": "#29B5A7" },
+    { "id": 4,  "author": "TB",             "token": "sticky-teal",   "hex": "#28BDB1", "sampled": "#29B5A7" },
+    { "id": 5,  "author": "JP",             "token": "sticky-purple", "hex": "#B880EF", "sampled": "#AE78E9" },
+    { "id": 6,  "author": "JD",             "token": "sticky-pink",   "hex": "#FF66A3", "sampled": "#FC5C97" },
+    { "id": 7,  "author": "Allie",          "token": "sticky-pink",   "hex": "#FF66A3", "sampled": "#FC5C97" },
+    { "id": 8,  "author": "Mani",           "token": "sticky-green",  "hex": "#8FDCAF", "sampled": "#85D6A8" },
+    { "id": 9,  "author": "Sarang",         "token": "sticky-green",  "hex": "#8FDCAF", "sampled": null },
+    { "id": 10, "author": "Geo",            "token": null,            "hex": null,      "sampled": null, "note": "Not visible in any screenshot as a colored card." },
+    { "id": 11, "author": "NFT Daddy",      "token": "sticky-pink",   "hex": "#FF66A3", "sampled": null },
+    { "id": 12, "author": "Anonymous",      "token": "sticky-orange", "hex": "#FFB647", "sampled": "#FDAB4C" },
+    { "id": 13, "author": "Bryan",          "token": "sticky-orange", "hex": "#FFB647", "sampled": "#FDAB4C" },
+    { "id": 14, "author": "Quana - UTP3",   "token": "sticky-blue",   "hex": "#70A5FF", "sampled": "#659CFB" },
+    { "id": 15, "author": "Anonymous",      "token": "sticky-teal",   "hex": "#28BDB1", "sampled": "#29B5A7" },
+    { "id": 16, "author": "Anonymous",      "token": "sticky-purple", "hex": "#B880EF", "sampled": "#AE78E9" },
+    { "id": 17, "author": "Margrit Pez",    "token": "sticky-pink",   "hex": "#FF66A3", "sampled": null }
+  ],
+  "distribution": {
+    "sticky-teal": 4,
+    "sticky-pink": 4,
+    "sticky-blue": 2,
+    "sticky-orange": 2,
+    "sticky-purple": 2,
+    "sticky-green": 2,
+    "sticky-yellow": 0,
+    "unknown": 1
+  },
+  "unsolved": [
+    "Note 9 (Sarang) is mint green by eye but was never sampled at a clean pixel — the card was always clipped or overlaid. Listed as sticky-green by visual match; verify against a clean screenshot if one surfaces.",
+    "Note 11 (NFT Daddy), 15, and 16 read as pink/teal/purple by eye but were not pixel-sampled. Low risk: each is clearly distinct from its neighbors.",
+    "Note 10 (Geo, 'I love you') never appeared as a colored card in any surviving frame. Color genuinely unknown.",
+    "Notably, sticky-yellow was never used on this wall, despite being the app's default."
+  ]
+}
