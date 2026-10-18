@@ -71,3 +71,10 @@ complete database and everything above becomes a backup.
 `import_notes.py` will merge such an export into `notes.json` without clobbering the
 video-recovered data — real rows upgrade partial findings in place, and notes that only
 the video had are preserved.
+
+## Verbatim transcription rule
+
+Typos, odd punctuation, and stray characters are preserved exactly as written, not corrected or normalized. Two confirmed examples:
+
+- Note 12 (posse scholar): `an "glass is half full"` — the writer's actual wording, kept as-is.
+- Note 6 (JD): the message ends with a bare `A` after `count!`. This looks like a typo but is genuinely what JD typed. It was flagged during OCR as a possible artifact and then confirmed as real.
