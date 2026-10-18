@@ -77,12 +77,14 @@ def main():
     with open(os.path.join(HERE, 'notes.json')) as f:
         d = json.load(f)
 
-    full = [n for n in d['notes'] if n['confidence'] != 'low' and not n['text'].startswith('…')]
-    frag = [n for n in d['notes'] if n not in full]
+    full = [n for n in d['notes'] if n['confidence'] == 'high']
+    frag = [n for n in d['notes'] if n['confidence'] != 'high']
+    full.sort(key=lambda n: n['id'])
+    frag.sort(key=lambda n: n['id'])
 
     out = [FRONT, '']
     out.append(f"**{len(d['notes'])} notes recovered** "
-               f"({len(full)} complete or near-complete, {len(frag)} fragments).")
+               f"({len(full)} complete, {len(frag)} clipped at a frame edge).")
     out.append('')
     out.append('---')
     out.append('')
@@ -93,9 +95,10 @@ def main():
     if frag:
         out.append('---')
         out.append('')
-        out.append('## Fragments')
+        out.append('## Clipped notes')
         out.append('')
-        out.append('Only these parts were ever visible. The rest is gone.')
+        out.append('Most of each of these was recovered, but they open or close mid-sentence at a '
+                   'frame edge. The missing words were never on screen in any surviving source.')
         out.append('')
         for n in frag:
             out.append(block(n))

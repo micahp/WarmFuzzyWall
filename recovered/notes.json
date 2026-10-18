@@ -6,7 +6,7 @@
     "recovered_by": "Kallen (Hermes) for Micah Peoples (@geoppls)",
     "original_app": "https://replit.com/@geoppls/WarmFuzzyWall",
     "live_url": "https://warm-fuzzy-wall--geoppls.replit.app (UI still serves, database is gone)",
-    "status": "PARTIAL RECOVERY — original Neon Postgres database deleted by Replit; retention window (~1 week) long expired",
+    "status": "PARTIAL RECOVERY — database deleted; 14 of 19 notes complete, 5 nearly complete but clipped at frame edges",
     "sources": [
       {
         "name": "YouTube demo video",
@@ -28,13 +28,18 @@
         "name": "User-supplied screenshot",
         "url": "local: img_e52f3aaef6c9.png",
         "detail": "Full-page capture of the wall showing three notes at once. Upgraded the posse-scholar note to full confidence and contributed the Margrit Pez note, which never appeared in the video."
+      },
+      {
+        "name": "Additional user-supplied video stills (1920x1080)",
+        "url": "local: img_6a99c966d8a8.png, img_01bc5ece6732.png",
+        "detail": "Two full-resolution 1080p stills of the demo video, larger and cleaner than the downloaded stream. Resolved signatures (Bryan, Quana - UTP3, NFT Daddy, JP, GG) and recovered the bodies of four previously fragmentary notes."
       }
     ],
     "notes_recovered": 19,
     "confidence_legend": {
-      "high": "Full text legible, cross-checked across sources",
-      "medium": "Legible but partially occluded; concatenated from several frames",
-      "low": "Fragmentary — only part of the note ever appeared on camera"
+      "high": "Full text recovered and legible, cross-checked across sources",
+      "medium": "Most of the note recovered, but it opens or closes mid-sentence at a frame edge — beginning or ending genuinely lost",
+      "low": "Fragmentary (none currently)"
     }
   },
   "notes": [
@@ -77,12 +82,13 @@
     {
       "id": 5,
       "recipient": null,
-      "author": "Anonymous",
+      "author": "JP",
       "date": "Apr 23",
-      "text": "I told chatgpt to catch me outside on righting an essay for Micah's 30th birthday. But I really didn't have a good joke to follow that up with. Umm Yeah. What else do I say? This dude right here (metaphorically points at Micah), all grown and stuff in his 30s now. I love him. And don't you forget it!",
-      "confidence": "medium",
+      "text": "I told chatgpt to catch me outside on righting an essay for Micah's 30th birthday. But I really didn't have a good joke to follow that up with. Umm. Yeah. What else do I say? This dude right here (metaphorically points at Micah), all grown and stuff in his 30s now. I love him. And don't you forget that. Happy Birthday!",
+      "confidence": "high",
       "source": "video frames + thumbnail (top of note cut off in early frames)",
-      "note_text_original_typos_preserved": true
+      "note_text_original_typos_preserved": true,
+      "recovery_note": "Signature \"JP\" and the closing lines (\"...that. Happy Birthday!\") recovered."
     },
     {
       "id": 6,
@@ -132,13 +138,13 @@
     },
     {
       "id": 11,
-      "recipient": null,
-      "author": "Jeff Dudan",
+      "recipient": "G.Ppls",
+      "author": "NFT Daddy",
       "date": "Apr 23",
       "text": "It's been awesome seeing you go from a cyborg in highschool to an emotional wreck like everyone else! Glad to call you my brother!",
-      "confidence": "medium",
-      "source": "video frames",
-      "author_uncertain": "OCR read this as 'Niff Daddy' / 'NFR Buddy' / 'Jeff Dudan' in different frames — likely 'Jeff Dudan'"
+      "confidence": "high",
+      "source": "user-supplied screenshots (larger, cleaner) + video frames",
+      "recovery_note": "Signature was previously read as \"Jeff Dudan\" / \"Niff Daddy\" / \"NFR Buddy\". A larger screenshot resolves it as \"NFT Daddy\", addressed \"To: G.Ppls\"."
     },
     {
       "id": 12,
@@ -153,61 +159,63 @@
     {
       "id": 13,
       "recipient": null,
-      "author": "unknown",
-      "date": null,
+      "author": "Bryan",
+      "date": "Apr 23",
       "text": "…friend and brother. Lord willing, in this lifetime and the next, I got you!",
-      "confidence": "low",
+      "confidence": "medium",
       "source": "video frames",
-      "recovery_note": "Only the bottom half of this note was ever visible on camera. Beginning is unrecoverable."
+      "recovery_note": "Author and date recovered from a larger screenshot. The note's opening still sat above the frame edge, so the first half of the sentence remains lost."
     },
     {
       "id": 14,
       "recipient": null,
-      "author": "unknown",
-      "date": null,
-      "text": "…birthday marks the beginning of a year (and decade!) filled with joy,",
-      "confidence": "low",
+      "author": "Quana - UTP3",
+      "date": "Apr 23",
+      "text": "…birthday marks the beginning of a year (and decade!) filled with joy, growth, and everything your heart desires. You deserve all the good things coming your way. Keep shining!",
+      "confidence": "medium",
       "source": "video frames",
-      "recovery_note": "Middle fragment only. Beginning and end never appeared on camera."
+      "recovery_note": "Body almost fully recovered from a larger screenshot, plus the signature and date. The sentence still opens mid-clause; whatever preceded \"…birthday marks\" was above the frame edge."
     },
     {
       "id": 15,
       "recipient": "Micah",
       "author": "unknown",
       "date": null,
-      "text": "Micah, you are one of the most thoughtful, creative, and inspirational people that I…",
-      "confidence": "low",
+      "text": "Micah, you are one of the most thoughtful, creative, and inspirational people that I know and may as well be an angel in human form!! We met literally trying to build a safer and better world for everyone 💯 What a blessing and privilege to call you",
+      "confidence": "medium",
       "source": "thumbnail bottom row",
-      "recovery_note": "Cut off by the bottom edge of the frame."
+      "recovery_note": "Nearly complete from a larger screenshot. Still ends mid-sentence at the frame edge; the closing lines and signature are lost. Note the original \"privledge\" typo, corrected to \"privilege\" here — see note field.",
+      "note": "Original screenshot reads \"privledge\" (typo)."
     },
     {
       "id": 16,
       "recipient": null,
       "author": "unknown",
       "date": null,
-      "text": "Happy 30th Birthday! It feels like just yesterday we were at UT Austin together…",
-      "confidence": "low",
+      "text": "Happy 30th Birthday! It feels like just yesterday we were at UT Austin together with Posse, and now here you are - thriving, evolving, and creating amazing things. It's been such a joy to watch your journey and see all the cool, inspiring ideas",
+      "confidence": "medium",
       "source": "thumbnail bottom row",
-      "recovery_note": "Cut off by the bottom edge of the frame."
+      "recovery_note": "Nearly complete from a larger screenshot. Still cuts off mid-sentence at the frame edge; the ending and signature are lost."
     },
     {
       "id": 17,
       "recipient": null,
       "author": "Anonymous",
       "date": "Apr 23",
-      "text": "Happy birthday! Yer cute.",
-      "confidence": "medium",
-      "source": "thumbnail (partially hidden by Add button)"
+      "text": "Happy birthday! Yer cute",
+      "confidence": "high",
+      "source": "thumbnail (partially hidden by Add button)",
+      "recovery_note": "Partially obscured by the Add button in the video; fully legible in the larger screenshot."
     },
     {
       "id": 18,
       "recipient": null,
-      "author": "unknown",
+      "author": "Anonymous",
       "date": "Apr 23",
-      "text": "…day 🎂🎈 🥰",
-      "confidence": "low",
+      "text": "Micah Happy Birthday 🎂🎁 🥳❤️ Love you GG❤️🥰",
+      "confidence": "high",
       "source": "thumbnail (partially obscured)",
-      "recovery_note": "Only a trailing fragment visible. Almost entirely lost."
+      "recovery_note": "Previously read as an unrecoverable fragment (\"…day 🎂🎈 🥰\"). A larger screenshot revealed the full note, including the \"Love you GG\" signature."
     },
     {
       "id": 19,

@@ -13,7 +13,7 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 ---
 
 
-**19 notes recovered** (14 complete or near-complete, 5 fragments).
+**19 notes recovered** (15 complete, 4 clipped at a frame edge).
 
 ---
 
@@ -43,11 +43,13 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 — **TB**
 
-### 5. Anonymous — Apr 23
+### 5. JP — Apr 23
 
-> I told chatgpt to catch me outside on righting an essay for Micah's 30th birthday. But I really didn't have a good joke to follow that up with. Umm Yeah. What else do I say? This dude right here (metaphorically points at Micah), all grown and stuff in his 30s now. I love him. And don't you forget it!
+> I told chatgpt to catch me outside on righting an essay for Micah's 30th birthday. But I really didn't have a good joke to follow that up with. Umm. Yeah. What else do I say? This dude right here (metaphorically points at Micah), all grown and stuff in his 30s now. I love him. And don't you forget that. Happy Birthday!
 
-— **Anonymous**
+— **JP**
+
+*Signature "JP" and the closing lines ("...that. Happy Birthday!") recovered.*
 
 ### 6. JD — Apr 23
 
@@ -81,13 +83,13 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 *This is Micah's own note (authored as Geo), shown in a modal*
 
-### 11. Jeff Dudan — Apr 23
+### 11. To: G.Ppls — NFT Daddy — Apr 23
 
 > It's been awesome seeing you go from a cyborg in highschool to an emotional wreck like everyone else! Glad to call you my brother!
 
-— **Jeff Dudan**
+— **NFT Daddy**
 
-*OCR read this as 'Niff Daddy' / 'NFR Buddy' / 'Jeff Dudan' in different frames — likely 'Jeff Dudan'*
+*Signature was previously read as "Jeff Dudan" / "Niff Daddy" / "NFR Buddy". A larger screenshot resolves it as "NFT Daddy", addressed "To: G.Ppls".*
 
 ### 12. To: Micah — unknown
 
@@ -99,9 +101,19 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 ### 17. Anonymous — Apr 23
 
-> Happy birthday! Yer cute.
+> Happy birthday! Yer cute
 
 — **Anonymous**
+
+*Partially obscured by the Add button in the video; fully legible in the larger screenshot.*
+
+### 18. Anonymous — Apr 23
+
+> Micah Happy Birthday 🎂🎁 🥳❤️ Love you GG❤️🥰
+
+— **Anonymous**
+
+*Previously read as an unrecoverable fragment ("…day 🎂🎈 🥰"). A larger screenshot revealed the full note, including the "Love you GG" signature.*
 
 ### 19. Margrit Pez — Apr 23
 
@@ -113,49 +125,43 @@ screenshot the Replit agent attached to a commit, and a screenshot of the live w
 
 ---
 
-## Fragments
+## Clipped notes
 
-Only these parts were ever visible. The rest is gone.
+Most of each of these was recovered, but they open or close mid-sentence at a frame edge. The missing words were never on screen in any surviving source.
 
-### 13. unknown
+### 13. Bryan — Apr 23
 
 > …friend and brother. Lord willing, in this lifetime and the next, I got you!
 
-— **unknown**
+— **Bryan**
 
-*Only the bottom half of this note was ever visible on camera. Beginning is unrecoverable.*
+*Author and date recovered from a larger screenshot. The note's opening still sat above the frame edge, so the first half of the sentence remains lost.*
 
-### 14. unknown
+### 14. Quana - UTP3 — Apr 23
 
-> …birthday marks the beginning of a year (and decade!) filled with joy,
+> …birthday marks the beginning of a year (and decade!) filled with joy, growth, and everything your heart desires. You deserve all the good things coming your way. Keep shining!
 
-— **unknown**
+— **Quana - UTP3**
 
-*Middle fragment only. Beginning and end never appeared on camera.*
+*Body almost fully recovered from a larger screenshot, plus the signature and date. The sentence still opens mid-clause; whatever preceded "…birthday marks" was above the frame edge.*
 
 ### 15. To: Micah — unknown
 
-> Micah, you are one of the most thoughtful, creative, and inspirational people that I…
+> Micah, you are one of the most thoughtful, creative, and inspirational people that I know and may as well be an angel in human form!! We met literally trying to build a safer and better world for everyone 💯 What a blessing and privilege to call you
 
 — **unknown**
 
-*Cut off by the bottom edge of the frame.*
+*Nearly complete from a larger screenshot. Still ends mid-sentence at the frame edge; the closing lines and signature are lost. Note the original "privledge" typo, corrected to "privilege" here — see note field.*
+
+*Original screenshot reads "privledge" (typo).*
 
 ### 16. unknown
 
-> Happy 30th Birthday! It feels like just yesterday we were at UT Austin together…
+> Happy 30th Birthday! It feels like just yesterday we were at UT Austin together with Posse, and now here you are - thriving, evolving, and creating amazing things. It's been such a joy to watch your journey and see all the cool, inspiring ideas
 
 — **unknown**
 
-*Cut off by the bottom edge of the frame.*
-
-### 18. unknown — Apr 23
-
-> …day 🎂🎈 🥰
-
-— **unknown**
-
-*Only a trailing fragment visible. Almost entirely lost.*
+*Nearly complete from a larger screenshot. Still cuts off mid-sentence at the frame edge; the ending and signature are lost.*
 
 ---
 
