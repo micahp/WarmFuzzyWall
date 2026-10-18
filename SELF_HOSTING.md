@@ -30,7 +30,7 @@ Works against local Postgres, Docker, Neon, Supabase, RDS — anything speaking 
 
 `GET /api/notes/:id` was registered before `GET /api/notes/export`. Express matches in declaration order, so the literal path `/api/notes/export` was captured by `:id` and rejected with `400 Invalid note ID`.
 
-**This means the Export button never worked.** It is the single reason no JSON backup was ever downloaded to your browser — the browser would have received a 400. This bug is worth calling out because it is the reason the data had no escape hatch.
+This broke the data export feature. To be clear about the scope: there is **no export control on the wall itself**. The export lives on a separate, unlinked admin page at `/data-transfer`, added for migrating a wall between deployments. So the endpoint being broken did not remove a visible button — it meant the only backup path that existed would have failed if anyone had found it.
 
 Fixed by constraining the param to digits:
 
@@ -38,7 +38,7 @@ Fixed by constraining the param to digits:
 app.get("/api/notes/:id(\\d+)", ...)
 ```
 
-Now `/api/notes/export` resolves correctly.
+Now `/api/notes/export` resolves correctly, and `/data-transfer` works end to end.
 
 ---
 
